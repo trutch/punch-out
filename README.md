@@ -7,7 +7,8 @@ Wanted a watch face to honor my favorite NES game. Currently only works on vivoa
 ## Current features:
 
 * Move bar
-* Max heartrate over last 5 minutes displayed
+* Max heartrate over last 20 readings
+* Battery Indicator
 * Steps completed
 * Time and date
 * Knock out your opponent when goal is reached
@@ -15,6 +16,7 @@ Wanted a watch face to honor my favorite NES game. Currently only works on vivoa
 ## Version Notes:
 
 ```
+v1.0.3 - Fixed Heartrate, Added Battery Indicator and Step Goal Information
 v1.0.2 - Fixed Time Settings and Progress Bar Bugs 
 v1.0.1 - Added Launcher Icon and internal optimizations
 v1.0.0 - Initial Release
