@@ -1,2 +1,4 @@
 bin/punchOut.prg
 bin/punchOut.prg.debug.xml
+.DS_Store
+.project
