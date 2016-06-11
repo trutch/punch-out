@@ -23,18 +23,17 @@ class punchOutView extends Ui.WatchFace {
 
     //! Load your resources here
     function onLayout(dc) {
+     // Load time font
+     timefont = Ui.loadResource(Rez.Fonts.font_timefont);
+     datefont = Ui.loadResource(Rez.Fonts.font_datefont);
+     // Grab watch settings
+     device_settings = Sys.getDeviceSettings();
      background_bmp = Ui.loadResource(Rez.Drawables.WatchBG);
      little_mac_still_bmp = Ui.loadResource(Rez.Drawables.littleMac_still);
      little_mac_win_bmp = Ui.loadResource(Rez.Drawables.littleMac_win);
      mike_tyson_still_bmp = Ui.loadResource(Rez.Drawables.mikeTyson_still);
      mike_tyson_down_bmp = Ui.loadResource(Rez.Drawables.mikeTyson_down);
      mario_ko_bmp = Ui.loadResource(Rez.Drawables.mario_ko);
-     
-     // Load time font
-     timefont = Ui.loadResource(Rez.Fonts.font_timefont);
-     datefont = Ui.loadResource(Rez.Fonts.font_datefont);
-     // Grab watch settings
-     device_settings = Sys.getDeviceSettings();
     }
 
     //! Called when this View is brought to the foreground. Restore
@@ -64,22 +63,42 @@ class punchOutView extends Ui.WatchFace {
         
         // Draw appropriate bitmaps based on step goal
         if ( act_info.steps >= act_info.stepGoal) {
-            dc.drawBitmap(74, 84, mike_tyson_down_bmp);
-            dc.drawBitmap(40, 128, little_mac_win_bmp);
-            dc.drawBitmap(80, 140, mario_ko_bmp);
+            dc.drawBitmap(74, 94, mike_tyson_down_bmp);
+            dc.drawBitmap(40, 138, little_mac_win_bmp);
+            dc.drawBitmap(80, 150, mario_ko_bmp);
         } else {
-            dc.drawBitmap(47, 52, mike_tyson_still_bmp);
+            dc.drawBitmap(47, 55, mike_tyson_still_bmp);
             dc.drawBitmap(65, 128, little_mac_still_bmp);
         }
         // Update the view
         // Write the current clock time
-        dc.drawText( 88, 7, timefont, time.toString(), Gfx.TEXT_JUSTIFY_LEFT );
-        dc.drawText( 115, 21, datefont, date, Gfx.TEXT_JUSTIFY_CENTER );
-        dc.drawText( 140, 38, datefont, act_info.steps, Gfx.TEXT_JUSTIFY_RIGHT );
+        dc.drawText( 86, 8, timefont, time.toString(), Gfx.TEXT_JUSTIFY_LEFT );
+        dc.drawText( 113, 24, datefont, date, Gfx.TEXT_JUSTIFY_CENTER );
+        dc.drawText(74, 26, datefont, act_info.stepGoal, Gfx.TEXT_JUSTIFY_RIGHT );
+        dc.drawText( 140, 49, datefont, act_info.steps, Gfx.TEXT_JUSTIFY_RIGHT );
         
+        // Battery Info
+        dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+        System.println("Battery: " + device_stats.battery);
+        if ( device_stats.battery > 20.0 ) {
+          dc.fillRectangle(13, 10, 2, 4);
+        }
+        if ( device_stats.battery >= 40.0 ) {
+          dc.fillRectangle(16, 10, 2, 4);
+        } 
+        if ( device_stats.battery >= 60.0 ) {
+          dc.fillRectangle(19, 10, 2, 4);
+        }
+        if ( device_stats.battery >= 80.0 ) {
+          dc.fillRectangle(22, 10, 2, 4);
+        }
+        if ( device_stats.battery >= 95.0 ) {
+          dc.fillRectangle(25, 10, 2, 4);
+        }
+                
         // Write Heart Rate
         dc.setColor(0xa8f0bc, Gfx.COLOR_TRANSPARENT);
-        dc.drawText( 54, 11, datefont, hr_info.getMax(), Gfx.TEXT_JUSTIFY_LEFT );
+        dc.drawText( 52, 8, datefont, hr_info.getMax(), Gfx.TEXT_JUSTIFY_LEFT );
         
         // Draw Move Bar above Steps
         var width = 71;
@@ -87,7 +106,7 @@ class punchOutView extends Ui.WatchFace {
         //System.println("act_info.moveBarLevel: " + act_info.moveBarLevel);
         //System.println("Act.MOVE_BAR_LEVEL_MIN: " + Act.MOVE_BAR_LEVEL_MIN);
         //System.println("Act.MOVE_BAR_LEVEL_MAX: " + Act.MOVE_BAR_LEVEL_MAX);
-        dc.fillRoundedRectangle(9, 30, ( 14 * act_info.moveBarLevel ), 7, 1);
+        dc.fillRoundedRectangle(9, 41, ( 14 * act_info.moveBarLevel ), 7, 1);
     }
 
     //! Called when this View is removed from the screen. Save the
