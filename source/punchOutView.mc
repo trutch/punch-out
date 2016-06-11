@@ -45,18 +45,14 @@ class punchOutView extends Ui.WatchFace {
     //! Update the view
     function onUpdate(dc) {
         // initialize
-        var hr_info = Act.getHeartRateHistory(300, true);
+        var hr_info = Act.getHeartRateHistory(20, true);
         var act_info = Act.getInfo();
         var time = makeClockTime();
         var dateInfo = Time.Gregorian.info( Time.now(), Time.FORMAT_SHORT );
         var date = dateInfo.month.format("%02d") + "." + dateInfo.day.format("%02d");
         var device_stats = Sys.getSystemStats();
         //var act_info = Act.getInfo();
-       
-         // Draw the background
-        // This is offset incorrectly in FR920.
-        // That's a known issue (K2554).
-        
+  
         dc.clear();
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
         dc.drawBitmap(0, 0, background_bmp);
@@ -98,7 +94,7 @@ class punchOutView extends Ui.WatchFace {
                 
         // Write Heart Rate
         dc.setColor(0xa8f0bc, Gfx.COLOR_TRANSPARENT);
-        dc.drawText( 52, 8, datefont, hr_info.getMax(), Gfx.TEXT_JUSTIFY_LEFT );
+        dc.drawText( 73, 8, datefont, hr_info.getMax(), Gfx.TEXT_JUSTIFY_RIGHT );
         
         // Draw Move Bar above Steps
         var width = 71;
