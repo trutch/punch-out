@@ -61,6 +61,7 @@ class punchOutView extends Ui.WatchFace {
         dc.clear();
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
         dc.drawBitmap(0, 0, background_bmp);
+        
         // Draw appropriate bitmaps based on step goal
         if ( act_info.steps >= act_info.stepGoal) {
             dc.drawBitmap(74, 84, mike_tyson_down_bmp);
@@ -75,20 +76,18 @@ class punchOutView extends Ui.WatchFace {
         dc.drawText( 88, 7, timefont, time.toString(), Gfx.TEXT_JUSTIFY_LEFT );
         dc.drawText( 115, 21, datefont, date, Gfx.TEXT_JUSTIFY_CENTER );
         dc.drawText( 140, 38, datefont, act_info.steps, Gfx.TEXT_JUSTIFY_RIGHT );
+        
         // Write Heart Rate
         dc.setColor(0xa8f0bc, Gfx.COLOR_TRANSPARENT);
         dc.drawText( 54, 11, datefont, hr_info.getMax(), Gfx.TEXT_JUSTIFY_LEFT );
+        
         // Draw Move Bar above Steps
         var width = 71;
         dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT);
-        if( act_info.moveBarLevel == Act.MOVE_BAR_LEVEL_MIN ) {
-            dc.fillRoundedRectangle(9, 30, 1, 7, 1);
-            if( act_info.moveBarLevel == Act.MOVE_BAR_LEVEL_MIN + 1 ) {
-                dc.fillRoundedRectangle(9, 30, width/2, 7, 1);
-            } else {
-                dc.fillRoundedRectangle(9, 30, ( 14 * (Act.MOVE_BAR_LEVEL_MAX - act_info.moveBarLevel) ) / Act.MOVE_BAR_LEVEL_MAX, 7, 1);
-            }
-        }
+        //System.println("act_info.moveBarLevel: " + act_info.moveBarLevel);
+        //System.println("Act.MOVE_BAR_LEVEL_MIN: " + Act.MOVE_BAR_LEVEL_MIN);
+        //System.println("Act.MOVE_BAR_LEVEL_MAX: " + Act.MOVE_BAR_LEVEL_MAX);
+        dc.fillRoundedRectangle(9, 30, ( 14 * act_info.moveBarLevel ), 7, 1);
     }
 
     //! Called when this View is removed from the screen. Save the
@@ -113,7 +112,7 @@ class punchOutView extends Ui.WatchFace {
 
         if( device_settings.is24Hour )
             {
-            hour = clockTime.hour;
+              hour = clockTime.hour;
             }
         else
             {
