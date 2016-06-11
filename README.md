@@ -1,11 +1,8 @@
 # punch-Out!!
-===============================================
 
 http://github.com/trutch/punch-out
 
 Wanted a watch face to honor my favorite NES game. Currently only works on vivoactive HR and will likely stay that way since it's the only watch I own.
-
--------------------------------
 
 ## Current features:
 
@@ -14,8 +11,6 @@ Wanted a watch face to honor my favorite NES game. Currently only works on vivoa
 * Steps completed
 * Time and date
 * Knock out your opponent when goal is reached
-
--------------------------------
 
 ## Version Notes:
 
