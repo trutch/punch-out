@@ -14,6 +14,7 @@ Wanted a watch face to honor my favorite NES game. Currently only works on vivoa
 
 ## Version Notes:
 
-V1.0.1 - Added Launcher Icon and internal optimizations
-
-V1.0.0 - Initial Release
+```
+v1.0.1 - Added Launcher Icon and internal optimizations
+v1.0.0 - Initial Release
+```
