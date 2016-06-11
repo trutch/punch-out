@@ -15,6 +15,7 @@ Current features:
 * Time and date
 * Knock out your opponent when goal is reached
 
+
  -------------------------------
 
  Version Notes:
