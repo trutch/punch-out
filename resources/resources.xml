@@ -1,0 +1,9 @@
+<resources>
+    <string id="AppName">Punch-Out!!</string>
+    <bitmap id="WatchBG" filename="images/background.png" ></bitmap><fonts><font id="font_timefont" filename="fonts/punchOut.fnt" filter="0123456789:." /><font id="font_datefont" filename="fonts/punchOut_small.fnt" filter="0123456789." /></fonts>
+	<bitmap id="littleMac_still" filename="images/littlemac_00.png"></bitmap>
+	<bitmap id="mikeTyson_still" filename="images/mikeTyson_00.png"></bitmap>
+	<bitmap id="mikeTyson_down" filename="images/mikeTyson_02.png"></bitmap>
+	<bitmap filename="images/littlemac_01.png" id="littleMac_win"></bitmap>
+	<bitmap id="mario_ko" filename="images/mario_ko.png"></bitmap>
+	<bitmap id="LauncherIcon" filename="images/launcher_icon.png"></bitmap></resources>

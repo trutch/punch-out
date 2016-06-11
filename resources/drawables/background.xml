@@ -1,0 +1,2 @@
+<drawable-list id="background">
+	<bitmap id="id_background" filename="../images/background.png"></bitmap></drawable-list>
