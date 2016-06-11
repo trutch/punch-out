@@ -117,9 +117,8 @@ class punchOutView extends Ui.WatchFace {
             }
         else
             {
-            hour = clockTime.hour;
-            //hour = clockTime.hour % 12;
-            //hour = (hour == 0) ? 12 : hour;
+              hour = clockTime.hour % 12;
+              hour = (hour == 0) ? 12 : hour;
             }
 
         min = clockTime.min;

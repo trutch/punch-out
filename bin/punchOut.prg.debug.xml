@@ -43,28 +43,29 @@
 <entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutView.mc" lineNum="114" pc="268436787" symbol="makeClockTime"/>
 <entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutView.mc" lineNum="116" pc="268436804" symbol="makeClockTime"/>
 <entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutView.mc" lineNum="120" pc="268436817" symbol="makeClockTime"/>
-<entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutView.mc" lineNum="125" pc="268436827" symbol="makeClockTime"/>
-<entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutView.mc" lineNum="128" pc="268436837" symbol="makeClockTime"/>
-<entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutApp.mc" lineNum="7" pc="268436915" symbol="initialize"/>
-<entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutApp.mc" lineNum="20" pc="268436942" symbol="getInitialView"/>
-<entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutApp.mc" lineNum="25" pc="268436982" symbol="onSettingsChanged"/>
-<entry filename="Rez" lineNum="37" pc="268437001" symbol="initialize"/>
-<entry filename="Rez" lineNum="38" pc="268437025" symbol="initialize"/>
-<entry filename="Rez" lineNum="42" pc="268437071" symbol="draw"/>
-<entry filename="Rez" lineNum="43" pc="268437078" symbol="draw"/>
-<entry filename="Rez" lineNum="44" pc="268437085" symbol="draw"/>
-<entry filename="Rez" lineNum="45" pc="268437098" symbol="draw"/>
-<entry filename="Rez" lineNum="46" pc="268437111" symbol="draw"/>
-<entry filename="Rez" lineNum="51" pc="268437136" symbol="drawComplex"/>
-<entry filename="Rez" lineNum="65" pc="268437179" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="66" pc="268437204" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="67" pc="268437231" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="69" pc="268437247" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="70" pc="268437261" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="71" pc="268437358" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="72" pc="268437373" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="73" pc="268437425" symbol="WatchFace"/>
-<entry filename="Rez" lineNum="74" pc="268437471" symbol="WatchFace"/>
+<entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutView.mc" lineNum="121" pc="268436833" symbol="makeClockTime"/>
+<entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutView.mc" lineNum="124" pc="268436856" symbol="makeClockTime"/>
+<entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutView.mc" lineNum="127" pc="268436866" symbol="makeClockTime"/>
+<entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutApp.mc" lineNum="7" pc="268436944" symbol="initialize"/>
+<entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutApp.mc" lineNum="20" pc="268436971" symbol="getInitialView"/>
+<entry filename="/Users/rutschman/Documents/workspace/punchOut/source/punchOutApp.mc" lineNum="25" pc="268437011" symbol="onSettingsChanged"/>
+<entry filename="Rez" lineNum="37" pc="268437030" symbol="initialize"/>
+<entry filename="Rez" lineNum="38" pc="268437054" symbol="initialize"/>
+<entry filename="Rez" lineNum="42" pc="268437100" symbol="draw"/>
+<entry filename="Rez" lineNum="43" pc="268437107" symbol="draw"/>
+<entry filename="Rez" lineNum="44" pc="268437114" symbol="draw"/>
+<entry filename="Rez" lineNum="45" pc="268437127" symbol="draw"/>
+<entry filename="Rez" lineNum="46" pc="268437140" symbol="draw"/>
+<entry filename="Rez" lineNum="51" pc="268437165" symbol="drawComplex"/>
+<entry filename="Rez" lineNum="65" pc="268437208" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="66" pc="268437233" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="67" pc="268437260" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="69" pc="268437276" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="70" pc="268437290" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="71" pc="268437387" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="72" pc="268437402" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="73" pc="268437454" symbol="WatchFace"/>
+<entry filename="Rez" lineNum="74" pc="268437500" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8389124" method="true" symbol="onUpdate"/>
@@ -137,18 +138,18 @@
 <entry endPc="268436758" name="device_stats" stackId="7" startPc="268435852"/>
 <entry endPc="268436758" name="dateInfo" stackId="5" startPc="268435852"/>
 <entry endPc="268436758" name="time" stackId="4" startPc="268435852"/>
-<entry endPc="268436912" name="result" stackId="4" startPc="268436770"/>
-<entry endPc="268436912" name="hour" stackId="2" startPc="268436770"/>
-<entry endPc="268436912" name="min" stackId="3" startPc="268436770"/>
-<entry endPc="268436912" name="clockTime" stackId="1" startPc="268436770"/>
-<entry endPc="268437133" name="pWidth" stackId="4" startPc="268437071"/>
-<entry endPc="268437133" name="pY" stackId="3" startPc="268437071"/>
-<entry endPc="268437133" name="pX" stackId="2" startPc="268437071"/>
-<entry endPc="268437133" name="pHeight" stackId="5" startPc="268437071"/>
-<entry endPc="268437498" name="rez_cmp_local_label_TimeLabel_fontHeight" stackId="5" startPc="268437179"/>
-<entry endPc="268437498" name="rez_cmp_local_label_TimeLabel_font" stackId="3" startPc="268437179"/>
-<entry endPc="268437498" name="rez_cmp_local_custom_drawable_YDXT9JZEVFM0KPBR9E0L" stackId="2" startPc="268437179"/>
-<entry endPc="268437498" name="rez_cmp_local_label_TimeLabel" stackId="4" startPc="268437179"/>
+<entry endPc="268436941" name="result" stackId="4" startPc="268436770"/>
+<entry endPc="268436941" name="hour" stackId="2" startPc="268436770"/>
+<entry endPc="268436941" name="min" stackId="3" startPc="268436770"/>
+<entry endPc="268436941" name="clockTime" stackId="1" startPc="268436770"/>
+<entry endPc="268437162" name="pWidth" stackId="4" startPc="268437100"/>
+<entry endPc="268437162" name="pY" stackId="3" startPc="268437100"/>
+<entry endPc="268437162" name="pX" stackId="2" startPc="268437100"/>
+<entry endPc="268437162" name="pHeight" stackId="5" startPc="268437100"/>
+<entry endPc="268437527" name="rez_cmp_local_custom_drawable_5UYLBJBQRSKQOLFKPJRZ" stackId="2" startPc="268437208"/>
+<entry endPc="268437527" name="rez_cmp_local_label_TimeLabel_fontHeight" stackId="5" startPc="268437208"/>
+<entry endPc="268437527" name="rez_cmp_local_label_TimeLabel_font" stackId="3" startPc="268437208"/>
+<entry endPc="268437527" name="rez_cmp_local_label_TimeLabel" stackId="4" startPc="268437208"/>
 </localVars>
 <annotations/>
 <functions>
