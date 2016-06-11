@@ -16,6 +16,7 @@ Wanted a watch face to honor my favorite NES game. Currently only works on vivoa
 ## Version Notes:
 
 ```
+v1.0.4 - Changed Time/Date Background and Moved Fighters down
 v1.0.3 - Fixed Heartrate, Added Battery Indicator and Step Goal Information
 v1.0.2 - Fixed Time Settings and Progress Bar Bugs 
 v1.0.1 - Added Launcher Icon and internal optimizations

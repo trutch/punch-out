@@ -63,8 +63,8 @@ class punchOutView extends Ui.WatchFace {
             dc.drawBitmap(40, 138, little_mac_win_bmp);
             dc.drawBitmap(80, 150, mario_ko_bmp);
         } else {
-            dc.drawBitmap(47, 55, mike_tyson_still_bmp);
-            dc.drawBitmap(65, 128, little_mac_still_bmp);
+            dc.drawBitmap(47, 62, mike_tyson_still_bmp);
+            dc.drawBitmap(65, 140, little_mac_still_bmp);
         }
         // Update the view
         // Write the current clock time
