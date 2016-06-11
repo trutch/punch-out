@@ -15,11 +15,10 @@ Current features:
 * Time and date
 * Knock out your opponent when goal is reached
 
-
  -------------------------------
 
- Version Notes:
+Version Notes:
 
- V1.0.1 - Added Launcher Icon and internal optimizations
+V1.0.1 - Added Launcher Icon and internal optimizations
 
- V1.0.0 - Initial Release
+V1.0.0 - Initial Release
