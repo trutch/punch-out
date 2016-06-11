@@ -1,20 +1,22 @@
-punch-Out!!(http://github.com/trutch/punch-out)
+punch-Out!!
 ===============================================
 
- wanted a watch face to honor my favorite NES game. Currently only works on vivoactive HR and will likely stay that way since it's the only watch I own.
- -------------------------------
+http://github.com/trutch/punch-out
 
- Current features:
+Wanted a watch face to honor my favorite NES game. Currently only works on vivoactive HR and will likely stay that way since it's the only watch I own.
+-------------------------------
 
- -Move bar
+Current features:
 
- -Max heartrate over last 5 minutes displayed
+-Move bar
 
- -Steps completed
+-Max heartrate over last 5 minutes displayed
 
- -Time and date
+-Steps completed
 
- -Knock out your opponent when goal is reached
+-Time and date
+
+-Knock out your opponent when goal is reached
 
  -------------------------------
 
